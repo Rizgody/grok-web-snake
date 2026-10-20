@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f0f13;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #00ff9d;
+  margin-bottom: 12px;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin: 0 auto 12px;
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
+#score, #highScore {
+  color: #00ff9d;
+  font-weight: bold;
+}
+
+#gameCanvas {
+  background: #1a1a22;
+  border: 3px solid #00ff9d;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 30px rgba(0, 255, 157, 0.15);
+}
+
+.controls {
+  margin-top: 18px;
+}
+
+.controls p {
+  margin-bottom: 12px;
+  color: #888;
+}
+
+button {
+  background: #00ff9d;
+  color: #0f0f13;
+  border: none;
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0 6px;
+  transition: all 0.15s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #00cc7a;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background: #333;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.footer {
+  margin-top: 24px;
+  font-size: 0.85rem;
+  color: #555;
+  max-width: 400px;
+}
